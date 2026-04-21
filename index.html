@@ -1,0 +1,394 @@
+<!-- Meri Zindagi Hai Tu | Promotional Website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meri Zindagi Hai Tu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div id="preloader-content">
+      <p class="preloader-urdu">میری زندگی ہے تو</p>
+      <h1 class="preloader-title">Meri Zindagi Hai Tu</h1>
+      <p class="preloader-sub">A Story of Love. Deception. And Longing.</p>
+    </div>
+    <div id="preloader-overlay"></div>
+  </div>
+
+  <!-- AUDIO (autoplay on load) -->
+  <audio id="ost-audio" loop preload="auto">
+    <source src="ost.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- AUDIO PLAYER UI -->
+  <div id="audio-player">
+    <div id="audio-inner">
+      <div id="audio-info">
+        <div class="audio-icon">♪</div>
+        <div>
+          <p class="audio-title">Meri Zindagi Hai Tu — OST</p>
+          <p class="audio-artist">Asim Azhar & Sabri Sisters</p>
+        </div>
+      </div>
+      <button id="audio-toggle" onclick="toggleAudio()">❚❚</button>
+    </div>
+    <div id="audio-bar">
+      <div id="audio-progress"></div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="nav-urdu">میری زندگی ہے تو</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#cast">Cast</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#ost">OST</a></li>
+      <li><a href="#watch" class="nav-cta">Watch Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#story" onclick="toggleMenu()">Story</a></li>
+      <li><a href="#cast" onclick="toggleMenu()">Cast</a></li>
+      <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+      <li><a href="#ost" onclick="toggleMenu()">OST</a></li>
+      <li><a href="#watch" onclick="toggleMenu()">Watch Now</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <img class="hero-img hero-img-1" src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=1600&q=80"
+        alt="Series scene" />
+      <img class="hero-img hero-img-2" src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1600&q=80"
+        alt="Series scene 2" />
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">ARY Digital · 2025</p>
+      <h1 class="hero-title-urdu">میری زندگی ہے تو</h1>
+      <h2 class="hero-title-en">Meri Zindagi Hai Tu</h2>
+      <p class="hero-tagline">Two hearts. One storm. A love that changes everything.</p>
+      <div class="hero-meta">
+        <span>Hania Aamir</span>
+        <span class="meta-sep">✦</span>
+        <span>Bilal Abbas Khan</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#watch" class="btn-primary">Watch Now</a>
+        <a href="#story" class="btn-secondary">Explore Story</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="section-header">
+      <p class="section-tag">The Narrative</p>
+      <h2 class="section-title">A Love Tested by Fate</h2>
+    </div>
+    <div class="story-grid">
+      <div class="story-text">
+        <p class="story-urdu-quote">"محبت اور دھوکہ ساتھ ساتھ چلتے ہیں"</p>
+        <p class="story-quote-trans">"Love and deception walk side by side"</p>
+        <p>Kamyar — charming, impulsive, magnetic. Ayra — principled, pure-hearted, grounded. Two souls from entirely
+          different worlds find each other in the most unexpected way.</p>
+        <p>What begins as a sweet, tender connection slowly unravels into a storm of emotions, hidden secrets, and quiet
+          heartbreak. As Ayra discovers the layers beneath Kamyar's surface, she must choose between love and truth —
+          and face the possibility that the person she cherishes most may not be who she believed him to be.</p>
+        <p class="story-highlight">A story of love that dares to ask: how well do we truly know the ones we love?</p>
+        <div class="story-details">
+          <div class="detail-item">
+            <p class="detail-label">Writer</p>
+            <p class="detail-value">Radain Shah</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Director</p>
+            <p class="detail-value">Musaddiq Malek</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Producer</p>
+            <p class="detail-value">Humayun Saeed & Shahzad Nasib</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Channel</p>
+            <p class="detail-value">ARY Digital</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Airs</p>
+            <p class="detail-value">Every Fri & Sat · 8:00 PM</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Premiered</p>
+            <p class="detail-value">7 November 2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="story-visual">
+        <div class="story-img-stack">
+          <img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?w=600&q=80" alt="Drama still"
+            class="stack-img stack-back" />
+          <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=600&q=80" alt="Drama still 2"
+            class="stack-img stack-front" />
+          <div class="stack-label">
+            <p>Kamyar × Ayra</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAST -->
+  <section id="cast">
+    <div class="section-header">
+      <p class="section-tag">The Ensemble</p>
+      <h2 class="section-title">Meet the Cast</h2>
+    </div>
+    <div class="cast-grid">
+      <div class="cast-card cast-lead">
+        <div class="cast-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Hania_Aamir.png" alt="Hania Aamir" />
+          <div class="cast-overlay">
+            <p>As Ayra — principled, warm-hearted, and deeply loyal. Carries the moral compass of the story.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Female Lead</p>
+          <h3 class="cast-name">Hania Aamir</h3>
+          <p class="cast-char">as Ayra</p>
+        </div>
+      </div>
+      <div class="cast-card cast-lead">
+        <div class="cast-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Bilal_Abbas_Khan.jpg" alt="Bilal Abbas Khan" />
+          <div class="cast-overlay">
+            <p>As Kamyar — charming yet complex. A man of hidden layers and fierce passion.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Male Lead</p>
+          <h3 class="cast-name">Bilal Abbas Khan</h3>
+          <p class="cast-char">as Kamyar</p>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Alyy_Khan_2020.png" alt="Alyy Khan" />
+          <div class="cast-overlay">
+            <p>A global star — British-Pakistani actor with unmatched range and depth.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Supporting</p>
+          <h3 class="cast-name">Alyy Khan</h3>
+          <p class="cast-char">Ayra's Father</p>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Javeria Abbasi" />
+          <div class="cast-overlay">
+            <p>Two decades of excellence. A powerhouse of authentic, layered performances.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Supporting</p>
+          <h3 class="cast-name">Javeria Abbasi</h3>
+          <p class="cast-char">Ensemble</p>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img-wrap">
+          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80" alt="Adnan Jaffar" />
+          <div class="cast-overlay">
+            <p>Versatile, magnetic. Known for Ishq Murshid and Hum Tum.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Supporting</p>
+          <h3 class="cast-name">Adnan Jaffar</h3>
+          <p class="cast-char">Ensemble</p>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img-wrap">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" alt="Vardah Aziz" />
+          <div class="cast-overlay">
+            <p>Actress and filmmaker with international experience and natural charm.</p>
+          </div>
+        </div>
+        <div class="cast-info">
+          <p class="cast-role">Supporting</p>
+          <h3 class="cast-name">Vardah Aziz</h3>
+          <p class="cast-char">Ensemble</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-header">
+      <p class="section-tag">Visual Journey</p>
+      <h2 class="section-title">From the Series</h2>
+    </div>
+    <div class="gallery-marquee-wrap">
+      <div class="gallery-marquee">
+        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1520810627419-35e6bea3b6b4?w=500&q=80" alt="scene" />
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&q=80" alt="scene" />
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-tall">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="still" />
+        <div class="gallery-caption">Chemistry that defines a generation</div>
+      </div>
+      <div class="gallery-item gi-wide">
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80" alt="still" />
+        <div class="gallery-caption">Every frame tells a story</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1520810627419-35e6bea3b6b4?w=500&q=80" alt="still" />
+        <div class="gallery-caption">Love in its rawest form</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=500&q=80" alt="still" />
+        <div class="gallery-caption">Moments that linger</div>
+      </div>
+      <div class="gallery-item gi-wide2">
+        <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=800&q=80" alt="still" />
+        <div class="gallery-caption">When two worlds collide</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OST SECTION -->
+  <section id="ost">
+    <div class="ost-inner">
+      <div class="ost-text">
+        <p class="section-tag">Original Soundtrack</p>
+        <h2 class="section-title">The Song That Broke Records</h2>
+        <p class="ost-body">Sung by <strong>Asim Azhar</strong> and the <strong>Sabri Sisters</strong>, the OST of Meri
+          Zindagi Hai Tu became the first Pakistani drama soundtrack to top the Spotify weekly charts — a historic
+          milestone for Pakistani television.</p>
+        <div class="ost-badges">
+          <span class="badge">#1 Spotify Pakistan</span>
+          <span class="badge">2025 Hit</span>
+          <span class="badge">Asim Azhar</span>
+          <span class="badge">Sabri Sisters</span>
+        </div>
+        <div class="ost-links">
+          <a href="https://open.spotify.com/track/5RYXTC4G3RYYP6pUmaF6s2" target="_blank" class="ost-btn spotify">Listen
+            on Spotify</a>
+          <a href="https://www.youtube.com/@ARYDigitalHD" target="_blank" class="ost-btn youtube">Watch on YouTube</a>
+        </div>
+      </div>
+      <div class="ost-visual">
+        <div class="vinyl-wrap">
+          <div class="vinyl" id="vinyl">
+            <div class="vinyl-center">
+              <p>میری زندگی ہے تو</p>
+            </div>
+          </div>
+          <div class="vinyl-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCH -->
+  <section id="watch">
+    <div class="watch-inner">
+      <p class="section-tag">Stream Now</p>
+      <h2 class="watch-title">Where to Watch</h2>
+      <p class="watch-sub">New episodes every Friday & Saturday at 8:00 PM on ARY Digital</p>
+      <div class="watch-cards">
+        <a href="https://youtube.com/playlist?list=PLhL4GD559Hf43JRqw4btNLKsGYGcWF0Pt&si=Srjukt8_pGqbvYyK"
+          target="_blank" class="watch-card">
+          <div class="watch-icon yt-icon">▶</div>
+          <p class="watch-platform">YouTube</p>
+          <p class="watch-platform-sub">ARY Digital HD</p>
+          <span class="watch-arrow">→</span>
+        </a>
+        <a href="https://arytv.com/" target="_blank" class="watch-card watch-card-featured">
+          <div class="watch-featured-tag">Official</div>
+          <div class="watch-icon tv-icon">📺</div>
+          <p class="watch-platform">ARY Digital</p>
+          <p class="watch-platform-sub">Live & On-Demand</p>
+          <span class="watch-arrow">→</span>
+        </a>
+        <a href="https://open.spotify.com/track/5RYXTC4G3RYYP6pUmaF6s2" target="_blank" class="watch-card">
+          <div class="watch-icon sp-icon">♪</div>
+          <p class="watch-platform">Spotify</p>
+          <p class="watch-platform-sub">OST & Soundtrack</p>
+          <span class="watch-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-urdu">میری زندگی ہے تو</p>
+        <p class="footer-en">Meri Zindagi Hai Tu</p>
+        <p class="footer-tagline">A Six Sigma Plus Production · ARY Digital · 2025</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#story">Story</a>
+        <a href="#cast">Cast</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#ost">OST</a>
+        <a href="#watch">Watch</a>
+      </div>
+      <p class="footer-credits">Produced by Humayun Saeed & Shahzad Nasib · Directed by Musaddiq Malek · Written by
+        Radain Shah</p>
+      <p class="footer-note">Fan promotional page. All rights reserved to ARY Digital & Six Sigma Plus.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
