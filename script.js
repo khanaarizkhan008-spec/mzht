@@ -15,10 +15,15 @@ window.addEventListener('load', () => {
   .to('.preloader-sub', {
     opacity: 1, duration: 0.7, ease: 'power2.out'
   }, '-=0.4')
-  .to('#preloader-content', {
-    duration: 0, delay: 1.1
-  })
-  .to('#preloader-content', {
+  .to('#enter-btn', {
+    opacity: 1, y: -10, duration: 1, ease: 'back.out(1.7)', pointerEvents: 'all'
+  }, '-=0.2');
+});
+
+function startExperience() {
+  const tl = gsap.timeline();
+  
+  tl.to('#preloader-content', {
     y: -80, opacity: 0, duration: 0.7, ease: 'power2.in'
   })
   .to('#preloader', {
@@ -31,7 +36,7 @@ window.addEventListener('load', () => {
       showAudioPlayer();
     }
   }, '-=0.1');
-});
+}
 
 // ── HERO ENTRANCE ────────────────────────────
 function revealHero() {
